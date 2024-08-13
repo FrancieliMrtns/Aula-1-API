@@ -10,22 +10,22 @@ import jakarta.persistence.Column;
 @Entity
 @Table(name = "alunos")
 public class Aluno {
-    @id
+    @Id
     @GeneratedValue(strategy =GenerationType.IDENTITY)
     private long id;
-    @Column(nullale = false)
+    @Column(nullable = false)
     private String nome;
 
     public void setId(long id){
         this.id = id;
     }
 
-    public void getId(){
-        this.id;
+    public long getId(){
+        return this.id;
     }
 
     public void setNome(String nome){
-        return this.nome;
+        this.nome = nome;
     }
 
     public String getNome() {

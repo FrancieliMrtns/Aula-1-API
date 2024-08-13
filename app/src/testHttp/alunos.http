@@ -1,0 +1,12 @@
+@baseUrl = https://8080-francielimrtns-aula1api-whs8c46jbxm.ws-us115.gitpod.io
+
+###
+GET {{baseUrl}}/alunos
+
+###
+POST {{baseUrl}}/alunos
+Content-Type: application/json
+
+{
+    "nome": "Sei la"
+}
